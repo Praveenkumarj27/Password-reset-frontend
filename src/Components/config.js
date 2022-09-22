@@ -1,3 +1,3 @@
 export const config = {
-    api : 'http://localhost:8010'
+    api : 'https://password-reset-taskk.herokuapp.com'
 }
