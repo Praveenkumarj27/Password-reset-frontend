@@ -2,9 +2,10 @@ import React from "react";
 import { config } from "./config";
 import { useFormik } from "formik";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Passwordreset() {
+  let navigate=useNavigate();
   let formik = useFormik({
     initialValues: {
       email: "",
@@ -12,6 +13,7 @@ function Passwordreset() {
     onSubmit: async (values) => {
       let user = await axios.post(`${config.api}/resetpassword`, values);
       alert(user.data.message);
+      navigate("/reset-password-page")
     },
   });
 
