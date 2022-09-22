@@ -13,7 +13,6 @@ function Passwordreset() {
     onSubmit: async (values) => {
       let user = await axios.post(`${config.api}/resetpassword`, values);
       alert(user.data.message);
-      navigate("/reset-password-page")
     },
   });
 
