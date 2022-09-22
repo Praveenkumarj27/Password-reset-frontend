@@ -70,7 +70,6 @@ function Login() {
                   <Link
                     style={{
                       textDecoration: "none",
-                      paddingLeft: "150px",
                       paddingTop: "10px",
                     }}
                     to="/resetpassword"
