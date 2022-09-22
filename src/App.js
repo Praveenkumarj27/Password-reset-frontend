@@ -1,10 +1,11 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Login from './Login';
-import Signin from './Signin';
-import Passwordreset from './Passwordreset';
-import Dashboard from './Dashboard';
-import ResetPasswordPage from './ResetPasswordPage';
+import Login from './Components/Login';
+import Signin from './Components/Signin';
+import Passwordreset from './Components/Passwordreset';
+import Dashboard from './Components/Dashboard';
+import ResetPasswordPage from './Components/ResetPasswordPage';
+
 
 function App() {
   return (
